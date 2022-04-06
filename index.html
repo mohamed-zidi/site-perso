@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zidi Mohamed - Développeur web</title>
+    <meta name="description" content="Portfolio de Zidi Mohamed,développeur web junior en formation à LaPlateforme_">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./portfolio/css/style.css ">
+    <script src="./portfolio/js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="container d-flex">
+
+             <div class="logo">
+
+                 Zidi Mohamed 
+            </div>
+            <nav class="navbar">
+
+                <ul class="menu list-unstyled">
+
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#services">Mon parcours</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.fichier-pdf.fr/2022/03/30/mohamedcv/" target="_blank">Mon CV</a></li>
+                </ul>
+            </nav>
+            <div class="right">
+
+                <ul class="socials list-unstyled">
+
+                    <li><a href="https://www.linkedin.com/in/mohamed-zidi-91139b230/" target="_blank">
+                        <svg  class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    </a></li>
+                    <li><a href="https://github.com/mohamed-zidi" target="_blank">
+                        
+                        <svg  class="icon github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                    </a></li>
+                    <li>
+                        <a href="https://www.instagram.com/moha.san2/" target="_blank">
+                        
+                        <svg  class="icon insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a></li>
+ 
+                </ul>
+                <button class="burger"><span class="bar"></span></button>
+                 
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+
+            <div class="container">
+
+                <div class="grid">
+
+                    <div class="hero__item left">
+
+                        <span>Développeur Web Junior</span>
+                        <h1 class="title">Hello, je suis Zidi Mohamed </h1>
+                        <p>
+                            Développeur web et mobile junior en formation à La Plateforme_ à la recherche d'un contrat d'alternance pour septembre 2022.
+                        </p>
+                    </div>
+
+                    <div class="hero__item right">
+
+                         <div class="hero__avatar">
+
+                            <img src="./portfolio/img/avatar.png" width="400" height="400" loading="lazy" alt="Avatar - Zidi Mohamed junior Web Developper">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+
+            <div class="container">
+
+                <div class="grid">
+
+                    <div class="grid__item">
+                        <img src="./portfolio/img/person.JPG" width="530" height="890" loading="lazy" alt="Photo- Zidi Mohamed junior Web Developper">
+                    </div>
+
+                    <div class="grid__item">
+                        <h2 class="section-title">A propos</h2>
+                        <h3>Qui suis-je</h3>
+                        <p>
+                            Issu de la génération Y, j’ai grandi et me suis développé en même temps que l’informatique. Du collège à l’université, j’ai toujours ressenti une réelle motivation et curiosité lors des enseignements en la matière. C’est d’ailleurs à l’université que j’ai pu toucher du bout des doigts à ce monde du développement informatique, période qui a été marquante pour moi éveillant un attrait pour ce monde numérique.                        </p>
+
+                        <p>
+                            Mon parcours professionnel a pris un tout autre tournant en intégrant le 4eme régiment de chasseurs pendant 5 ans. Homme de défi, porter l’uniforme et devenir militaire a été un challenge personnel qui m’a permis de me connaitre, m’épanouir, dépasser mes limites et faire de moi l’homme que je suis aujourd’hui.
+                        </p>
+                        <p>
+                            Arrivé au bout de mon contrat dans l’armée de terre en 2021, une page se tourne afin de laisser place à de nouveaux défis. Conscient de la place prépondérante que tient l’informatique dans chaque pan de la société actuelle, toutes les réflexions que j’ai pu avoir quant à mon avenir m’ont mené à intégrer La Plateforrme pour une nouvelle aventure, développer mes compétences, les faire reconnaitre et pouvoir vivre de cette discipline.                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"> Mon parcours</h2>
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="grid">
+                    <div class="grid__item">
+                            <div class="service">
+                                <div class="service__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M320 128C328.8 128 336 135.2 336 144V160H352C360.8 160 368 167.2 368 176C368 184.8 360.8 192 352 192H320C311.2 192 304 184.8 304 176V144C304 135.2 311.2 128 320 128zM476.8 98.06L602.4 125.1C624.4 130.9 640 150.3 640 172.8V464C640 490.5 618.5 512 592 512H48C21.49 512 0 490.5 0 464V172.8C0 150.3 15.63 130.9 37.59 125.1L163.2 98.06L302.2 5.374C312.1-1.791 327-1.791 337.8 5.374L476.8 98.06zM256 512H384V416C384 380.7 355.3 352 320 352C284.7 352 256 380.7 256 416V512zM96 192C87.16 192 80 199.2 80 208V272C80 280.8 87.16 288 96 288H128C136.8 288 144 280.8 144 272V208C144 199.2 136.8 192 128 192H96zM496 272C496 280.8 503.2 288 512 288H544C552.8 288 560 280.8 560 272V208C560 199.2 552.8 192 544 192H512C503.2 192 496 199.2 496 208V272zM96 320C87.16 320 80 327.2 80 336V400C80 408.8 87.16 416 96 416H128C136.8 416 144 408.8 144 400V336C144 327.2 136.8 320 128 320H96zM496 400C496 408.8 503.2 416 512 416H544C552.8 416 560 408.8 560 400V336C560 327.2 552.8 320 544 320H512C503.2 320 496 327.2 496 336V400zM320 88C271.4 88 232 127.4 232 176C232 224.6 271.4 264 320 264C368.6 264 408 224.6 408 176C408 127.4 368.6 88 320 88z"/></svg>
+                                </div>
+                                <div class="service__content">
+                                    <h3>Baccalauréat scientifque</h3>
+                                    <p>
+                                        2011 - 2013 Lycée Saint Charles <br>  Marseille
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service">
+                                <div class="service__icon">
+                                    
+                                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
+                                </div>
+                                <div class="service__content">
+                                    <h3>Engagement au 4ème régiment de chasseur de Gap</h3>
+                                    <p>
+                                        Janvier à Avril 2016 - Formation initiale militaire
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="service">
+                                <div class="service__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
+                                </div>
+                                <div class="service__content">
+                                    <h3>Diplôme d'alpiniste militaire</h3>
+                                    <p>
+                                        Juillet à septembre 2016 - Formation d'alpiniste militaire
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="service">
+                                <div class="service__icon">
+                                    
+                                    <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM339.8 211.8C350.7 200.9 350.7 183.1 339.8 172.2C328.9 161.3 311.1 161.3 300.2 172.2L192 280.4L147.8 236.2C136.9 225.3 119.1 225.3 108.2 236.2C97.27 247.1 97.27 264.9 108.2 275.8L172.2 339.8C183.1 350.7 200.9 350.7 211.8 339.8L339.8 211.8z"/></svg>
+                                </div>
+                                <div class="service__content">
+                                    <h3>Certificat technique élémentaire</h3>
+                                    <p>
+                                        2019 - Spécialisation combat légers
+                                    </p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="grid__item">
+                        <div class="service">
+                            <div class="service__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M243.4 2.587C251.4-.8625 260.6-.8625 268.6 2.587L492.6 98.59C506.6 104.6 514.4 119.6 511.3 134.4C508.3 149.3 495.2 159.1 479.1 160V168C479.1 181.3 469.3 192 455.1 192H55.1C42.74 192 31.1 181.3 31.1 168V160C16.81 159.1 3.708 149.3 .6528 134.4C-2.402 119.6 5.429 104.6 19.39 98.59L243.4 2.587zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM127.1 416H167.1V224H231.1V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H31.1C17.9 512 5.458 502.8 1.372 489.3C-2.715 475.8 2.515 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 63.1 420.3V224H127.1V416z"/></svg>
+                            </div>
+                            <div class="service__content">
+                                <h3>Licence de biologie</h3>
+                                    <p>
+                                        2013 - 2015 Faculté de Luminy <br> Marseille
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <div class="service__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256-.0078C260.7-.0081 265.2 1.008 269.4 2.913L457.7 82.79C479.7 92.12 496.2 113.8 496 139.1C495.5 239.2 454.7 420.7 282.4 503.2C265.7 511.1 246.3 511.1 229.6 503.2C57.25 420.7 16.49 239.2 15.1 139.1C15.87 113.8 32.32 92.12 54.3 82.79L242.7 2.913C246.8 1.008 251.4-.0081 256-.0078V-.0078z"/></svg>
+                            </div>
+                            <div class="service__content">
+                                <h3>Formation aux métiers des armes de la cavalerie légère</h3>
+                                <p>
+                                    Avril à juillet 2016 - Obtention de la spécialité cavalier porté
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <div class="service__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M128 39C128 25.1 137.1 15.17 150.9 14.09L302.7 1.443C312 .6658 320 8.027 320 17.39V47.1C320 56.84 312.8 63.1 304 63.1H152.1C139.2 63.1 128 52.81 128 39V39zM302.4 95.1C303.5 101.2 304 106.5 304 111.1C304 156.2 268.2 191.1 224 191.1C179.8 191.1 144 156.2 144 111.1C144 106.5 144.6 101.2 145.6 95.1H302.4zM373.6 460.3L320 369.7V480C320 481.3 319.9 482.5 319.8 483.8L145.5 234.9C162.1 227.8 180.2 223.1 198.8 223.1H249.2C265.1 223.1 280.6 226.8 295 231.9L389.9 67.71C382.2 63.3 379.6 53.51 384 45.86C388.4 38.21 398.2 35.58 405.9 40L433.6 56C441.2 60.42 443.8 70.21 439.4 77.86L383.1 173.9L385.6 174.9C400.9 183.7 406.1 203.3 397.3 218.6L360.6 282C362.6 284.9 364.5 287.8 366.3 290.8L442.4 419.7C453.7 438.7 447.4 463.2 428.4 474.4C409.3 485.7 384.8 479.4 373.6 460.3V460.3zM264 319.1C277.3 319.1 288 309.3 288 295.1C288 282.7 277.3 271.1 264 271.1C250.7 271.1 240 282.7 240 295.1C240 309.3 250.7 319.1 264 319.1zM160 512C142.3 512 128 497.7 128 480V369.7L74.44 460.3C63.21 479.4 38.68 485.7 19.66 474.4C.6381 463.2-5.669 438.7 5.569 419.7L81.7 290.8C91.06 274.1 103.4 261.5 117.7 250.8L299.1 510C295.6 511.3 291.9 512 288 512L160 512z"/></svg>
+                            </div>
+                            <div class="service__content">
+                                <h3>Formation engins blindés</h3>
+                                <p>
+                                    Novembre 2016 - Obtention du diplôme de tireur sur AMX 10RC et ERC 90
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="service">
+                            <div class="service__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M400 32C426.5 32 448 53.49 448 80V336C448 362.5 426.5 384 400 384H266.7L277.3 416H352C369.7 416 384 430.3 384 448C384 465.7 369.7 480 352 480H96C78.33 480 64 465.7 64 448C64 430.3 78.33 416 96 416H170.7L181.3 384H48C21.49 384 0 362.5 0 336V80C0 53.49 21.49 32 48 32H400zM64 96V320H384V96H64zM592 32C618.5 32 640 53.49 640 80V432C640 458.5 618.5 480 592 480H528C501.5 480 480 458.5 480 432V80C480 53.49 501.5 32 528 32H592zM544 96C535.2 96 528 103.2 528 112C528 120.8 535.2 128 544 128H576C584.8 128 592 120.8 592 112C592 103.2 584.8 96 576 96H544zM544 192H576C584.8 192 592 184.8 592 176C592 167.2 584.8 160 576 160H544C535.2 160 528 167.2 528 176C528 184.8 535.2 192 544 192zM560 400C577.7 400 592 385.7 592 368C592 350.3 577.7 336 560 336C542.3 336 528 350.3 528 368C528 385.7 542.3 400 560 400z"/></svg>
+                            </div>
+                            <div class="service__content">
+                                <h3>Formation web/mobile developper</h3>
+                                <p>
+                                    2021 - Actuellement en coding school 1 à la LaPlateforme_
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="skills" class="skills">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2 class="section-title"> Mes Compétences</h2>
+                    <p>
+
+                    </p>
+                </div>
+
+                <div class="grid">
+
+                    <div class="grid__item">
+                        <h3>Domaines de Compétences</h3>
+                        <ul class="list-unstyled">
+
+                            <li>
+                                <h4>Front End</h4>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h4>Back End</h4>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h4>Conception de base de données MySQL</h4>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h4>Responsive design</h4>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h4> Mise en place de pages web dynamiques</h4>
+                                <p></p>
+                            </li>
+                            <!-- <li>
+                                <h4>Compétence</h4>
+                                <p>Desciption de la compétence</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="grid__item">
+
+                        <h3>Compétences en développement</h3>
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="60">HTML</div>
+                        </div> 
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="60">CSS</div>
+                        </div> 
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="60">PHP</div>
+                        </div> 
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="60">JAVASCRIPT</div>
+                        </div> 
+
+                        <h3>Compétences futures</h3>
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="5">React</div>
+                        </div>
+                        <div class="progressbar">
+
+                            <div class="bar" data-width="5">Symfony</div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2 class="section-title">Mon Portfolio</h2>
+                    <p>
+                        Voici ci-dessous certains des projets réalisés durant ma formation.
+                    </p>
+                </div>
+
+                <ul class="grid portfolio-filters list-unstyled">
+
+                    <li class="grid__item">
+                        <a href="#" data-filter="all" >Tous les projets</a>
+
+                    </li>
+                    <li class="grid__item">
+                        <a href="#" data-filter="html">HTML-CSS</a>
+
+                    </li>
+                    <li class="grid__item">
+                        <a href="#" data-filter="php">PHP</a>
+
+                    </li>
+                    <li class="grid__item">
+                        <a href="#" data-filter="js">JavaScript</a>
+
+                    </li>
+                </ul>
+                <div class="grid">
+
+                    <div class="grid__item">
+                        <div class="card" data-category="html">
+
+                            <img src="https://picsum.photos/600/400?random=1" loading="lazy" width="345" height="230" alt="Projetvilledemarseille" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">Marseille</h3>
+                                <p class="category"></p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-1">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-1">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Ville de Marseille</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2021</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Développement web
+                                              </p>
+                                              <p>
+                                                Création d'un site web pour mettre en avant notre jolie ville qu'est Marseille.
+                                              </p>
+                          
+                                              <!--<h5 class="h3">Informations</h5>
+                                               <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p> -->
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__item">
+                        <div class="card" data-category="php">
+
+                            <img src="https://picsum.photos/600/400?random=2" width="345" height="230" loading="lazy" alt="jeuDuPendu" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">Pendu</h3>
+                                <p class="category">PHP</p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-2">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-2">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Jeu du pendu</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2022</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Développement d'un jeu
+                                              </p>
+                                              <p>
+                                                Création d'une version du fameux jeu du pendu à l'aide de PHP,HTML et CSS.
+                                              </p>
+                          
+                                              <!-- <h5 class="h3">Informations</h5>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p> -->
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML, CSS</li>
+                                                <li>PHP</li>
+                                                
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="grid__item">
+                        <div class="card" data-category="php">
+
+                            <img src="https://picsum.photos/600/400?random=3" width="345" height="230" loading="lazy" alt="projetBoutiqueEnLigne" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">E-shop</h3>
+                                <p class="category">PHP</p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-3">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-3">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" width="530" height="354" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Boutique en ligne</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2022</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Développement web
+                                              </p>
+                                              <p>
+                                                Mise en place d'une boutique en ligne à l'aide de classes PHP.
+                                              </p>
+                          
+                                              <!-- <h5 class="h3">Informations</h5>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p> -->
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML, CSS</li>
+                                                <li>PHP</li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="grid__item">
+                        <div class="card" data-category="js">
+
+                            <img src="https://picsum.photos/600/400?random=4" loading="lazy" alt="Projetvilledemarseille" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">Marseille</h3>
+                                <p class="category">Développement Web</p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-4">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-4">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Titre MOdal 4 ${id}</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2019</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Refonte graphique
+                                              </p>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Informations</h5>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML, CSS</li>
+                                                <li>Javascript</li>
+                                                <li>React</li>
+                                                <li>Node.js</li>
+                                                <li>Express.js</li>
+                                                <li>MongoDB</li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!--<div class="grid__item">
+                        <div class="card" data-category="js">
+
+                            <img src="https://picsum.photos/600/400?random=5" loading="lazy" alt="Projetvilledemarseille" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">Marseille</h3>
+                                <p class="category">HTML+CSS</p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-5">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-5">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Titre MOdal 5 ${id}</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2019</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Refonte graphique
+                                              </p>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Informations</h5>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML, CSS</li>
+                                                <li>Javascript</li>
+                                                <li>React</li>
+                                                <li>Node.js</li>
+                                                <li>Express.js</li>
+                                                <li>MongoDB</li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="grid__item">
+                        <div class="card" data-category="html">
+
+                            <img src="https://picsum.photos/600/400?random=6" loading="lazy" alt="Projetvilledemarseille" class="card__image">
+                            <div class="card__inner">
+
+                                <h3 class="card__title">Pendu</h3>
+                                <p class="category">PHP</p>
+                            </div>
+                            <div class="card__overlay">
+                                <a href="#" class="card__link" data-id="modal-6">+</a>
+                            </div>
+                        </div>
+                        <div class="modal" id="modal-6">
+                            <button class="modal__close">&times;</button>
+                            <div class="modal__content">
+                                <div class="container">
+
+                                    <div class="grid">
+
+                                        <div class="grid__item">
+
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                            <img src="https://picsum.photos/600/400?random=2" loading="lazy" class="card__image" alt="jeuDuPendu">
+                                        </div>
+                                        <div class="grid__item">
+
+                                            <h4 class="modal__title h2">Titre MOdal 6 ${id}</h4>
+                                            <p>
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
+                                                  data-icon="calendar" class="svg-inline--fa fa-calendar fa-w-14" role="img"
+                                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                  <path fill="currentColor"
+                                                    d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                                                  </path>
+                                                </svg>
+                                                <i>Année : 2019</i>
+                                              </p>
+                                              <p class="category">
+                                                <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
+                                                  class="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                  viewBox="0 0 512 512">
+                                                  <path fill="currentColor"
+                                                    d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z">
+                                                  </path>
+                                                </svg>
+                                                Refonte graphique
+                                              </p>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Informations</h5>
+                                              <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Quaerat accusantium laborum aliquam enim. Vero
+                                                voluptate, animi, sint vel mollitia ut odio, eius quis
+                                                expedita quo at! Dignissimos ipsum odit dolores!
+                                              </p>
+                          
+                                              <h5 class="h3">Technologies</h5>
+                          
+                                              <ul>
+                                                <li>HTML, CSS</li>
+                                                <li>Javascript</li>
+                                                <li>React</li>
+                                                <li>Node.js</li>
+                                                <li>Express.js</li>
+                                                <li>MongoDB</li>
+                                              </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-header">
+
+                    <h2 class="section-title">Contact</h2>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/e6f30c559bb251c69a967a5317cf4705" method="POST" class="form">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="http://localhost/Zidi.Mohamed/index.html">
+                <label for="firstname">
+
+                    <input type="text" name="firstname" id="firstname" placeholder="Nom">
+                </label>
+                
+                <label for="lastname">
+
+                    <input type="text" name="lastname" id="lastname" placeholder="Prénom">
+                </label>
+
+                <label for="email">
+
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </label>
+
+                <textarea name="message" id="message" placeholder="Messsage"></textarea>
+
+                <input type="submit" class="btn" value="Envoyer">
+                
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__item">
+                    <p>Zidi Mohamed</p>
+                </div>
+                <div class="grid__item">
+                    <ul class="socials list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/mohamed-zidi-91139b230/" target="_blank">
+                            <svg  class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                        </a></li>
+                        <li><a href="https://github.com/mohamed-zidi" target="_blank">
+                            
+                            <svg  class="icon github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a></li>
+                        <li>
+                            <a href="https://www.instagram.com/moha.san2/" target="_blank">
+                            
+                            <svg  class="icon insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="grid__item">
+                    <p>Copyright</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
